@@ -63,7 +63,7 @@ Run the image as follows
 version: "3"
 services:
   remux:
-    image: ghcr.io/lostb1t/remux:latest # or nightly
+    image: ghcr.io/jsanderstechnologies/remux:latest # or nightly
     ports:
       - "3000:3000"
     volumes:
@@ -98,7 +98,7 @@ cargo make dev
 
 ### ❤️ Support the Project
 
-- ⭐ **[Star the repository](https://github.com/lostb1t/remux)** on GitHub.
+- ⭐ **[Star the repository](https://github.com/jsanderstechnologies/remux)** on GitHub.
 - 🤝 **Contribute**: Report issues, suggest features, or submit pull requests.
 - ☕ **Donate**:
   - **[Ko-fi](https://ko-fi.com/lostb1t)**

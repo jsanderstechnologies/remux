@@ -44,12 +44,12 @@ watch = true
 #cwd = "crates/server"
 
 [tasks.dev-serve-dash]
-command = "${HOME}/.cargo/bin/dx"
+command = "dx"
 args = ["serve", "--addr", "0.0.0.0", "--port", "8888"]
 cwd = "crates/remux-dashboard"
 
 [tasks.dev-build-dash]
-command = "${HOME}/.cargo/bin/dx"
+command = "dx"
 args = ["build", "--package", "remux-dashboard"]
 cwd = "crates/remux-dashboard"
 watch = {watch = ["${PWD}/crates/remux-dashboard/src", "${PWD}/crates/remux-dashboard/assets"]}
@@ -68,14 +68,14 @@ args = ["bundle", "--release", "-p", "remux-desktop"]
 
 [tasks.build-desktop-dash]
 description = "Build the dashboard WASM assets required by remux-desktop"
-command = "${HOME}/.cargo/bin/dx"
+command = "dx"
 args = ["build", "--release"]
 cwd = "crates/remux-dashboard"
 
 [tasks.build-docker]
 dependencies = ["jellyfin-web-ensure"]
 command = "docker"
-args = ["buildx", "build", "--network", "host", "-f", "docker/Dockerfile", "-t", "ghcr.io/lostb1t/remux-server:local", "."]
+args = ["buildx", "build", "--network", "host", "-f", "docker/Dockerfile", "-t", "ghcr.io/jsanderstechnologies/remux-server:local", "."]
 
 
 [tasks.jellyfin-web-checkout]

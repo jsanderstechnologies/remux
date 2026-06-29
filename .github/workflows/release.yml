@@ -8,7 +8,7 @@ permissions:
   packages: write
 
 env:
-  REGISTRY_IMAGE: ghcr.io/lostb1t/remux
+  REGISTRY_IMAGE: ghcr.io/jsanderstechnologies/remux
 
 jobs:
   test:
@@ -52,8 +52,8 @@ jobs:
       version: ${{ needs.semantic-release.outputs.new_release_version }}
       cargo_version: ${{ needs.semantic-release.outputs.new_release_version }}
       docker_tags: >-
-        -t ghcr.io/lostb1t/remux:${{ needs.semantic-release.outputs.new_release_version }}
-        -t ghcr.io/lostb1t/remux:latest
+        -t ghcr.io/jsanderstechnologies/remux:${{ needs.semantic-release.outputs.new_release_version }}
+        -t ghcr.io/jsanderstechnologies/remux:latest
       ref: ${{ needs.semantic-release.outputs.new_release_git_tag }}
     secrets: inherit
 

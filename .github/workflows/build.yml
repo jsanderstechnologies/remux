@@ -10,7 +10,7 @@ on:
       docker_tags:
         description: >-
           Space-separated imagetools tag flags,
-          e.g. "-t ghcr.io/lostb1t/remux:1.2.3 -t ghcr.io/lostb1t/remux:latest"
+          e.g. "-t ghcr.io/jsanderstechnologies/remux:1.2.3 -t ghcr.io/jsanderstechnologies/remux:latest"
         type: string
         required: true
       cargo_version:
@@ -28,7 +28,7 @@ on:
         default: ""
 
 env:
-  REGISTRY_IMAGE: ghcr.io/lostb1t/remux
+  REGISTRY_IMAGE: ghcr.io/jsanderstechnologies/remux
 
 jobs:
   build-jellyfin-web:
@@ -343,7 +343,7 @@ jobs:
         uses: docker/login-action@v3
         with:
           registry: ghcr.io
-          username: lostb1t
+          username: ${{ github.actor }}
           password: ${{ secrets.GH_TOKEN }}
 
       - name: Build and push by digest
@@ -390,7 +390,7 @@ jobs:
         uses: docker/login-action@v3
         with:
           registry: ghcr.io
-          username: lostb1t
+          username: ${{ github.actor }}
           password: ${{ secrets.GH_TOKEN }}
 
       - name: Set up Docker Buildx

@@ -2,32 +2,32 @@
 
 /* ── Design tokens ────────────────────────────────────────────────── */
 :root {
-  --bg:             #f2f2f2;
-  --bg-elevated:    #ffffff;
-  --panel:          #ffffff;
-  --panel-hover:    #f7f7f7;
-  --border:         #dddddd;
-  --border-hover:   #bbbbbb;
-  --primary:        #009245;
-  --primary-hover:  #007a38;
-  --primary-glow:   rgba(0, 146, 69, .15);
-  --primary-dim:    rgba(0, 146, 69, .08);
-  --text:           #111111;
-  --text-secondary: #555555;
-  --text-muted:     #777777;
-  --text-dim:       #aaaaaa;
-  --error:          #c0392b;
-  --error-glow:     rgba(192, 57, 43, .1);
-  --success:        #009245;
-  --info:           #2980b9;
-  --warning:        #e67e22;
+  --bg:             #0f0f13;
+  --bg-elevated:    #17171d;
+  --panel:          #17171d;
+  --panel-hover:    #212129;
+  --border:         #2a2a35;
+  --border-hover:   #3f3f4e;
+  --primary:        #00a850;
+  --primary-hover:  #00c25d;
+  --primary-glow:   rgba(0, 168, 80, 0.15);
+  --primary-dim:    rgba(0, 168, 80, 0.08);
+  --text:           #e4e4e7;
+  --text-secondary: #a1a1aa;
+  --text-muted:     #71717a;
+  --text-dim:       #52525b;
+  --error:          #ff5c5c;
+  --error-glow:     rgba(255, 92, 92, 0.1);
+  --success:        #00a850;
+  --info:           #3b82f6;
+  --warning:        #f59e0b;
   --font-head: "Inter", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", monospace;
   --radius-sm: 2px;
   --radius-md: 3px;
   --radius-lg: 4px;
-  --shadow-sm: 0 1px 3px rgba(0,0,0,.06);
-  --shadow-md: 0 2px 8px rgba(0,0,0,.10);
+  --shadow-sm: 0 1px 3px rgba(0,0,0,.5);
+  --shadow-md: 0 2px 8px rgba(0,0,0,.6);
   --transition: .1s ease;
 }
 
