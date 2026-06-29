@@ -56,7 +56,7 @@ jobs:
     steps:
       - name: Delete PR Docker image
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
         run: |
           VERSION_ID=$(gh api /user/packages/container/remux/versions \
